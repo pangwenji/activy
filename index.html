@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ico.ico" />
+    <title><!--app-title--></title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover" />
+    <link rel="manifest" href="/manifest.json">
+    <style>
+      @-webkit-keyframes loading1 {
+          0% {
+              -webkit-transform: scale(.4) translateX(28.57%);
+              -ms-transform: scale(.4) translateX(28.57%);
+              transform: scale(.4) translate(28.57%);
+              opacity: .3
+          }
+
+          to {
+              -webkit-transform: scale(1) translateX(0%);
+              -ms-transform: scale(1) translateX(0%);
+              transform: scale(1) translate(0);
+              opacity: 1
+          }
+      }
+
+
+      @keyframes loading1 {
+          0% {
+              -webkit-transform: scale(.4) translateX(28.57%);
+              -ms-transform: scale(.4) translateX(28.57%);
+              transform: scale(.4) translate(28.57%);
+              opacity: .3
+          }
+
+          to {
+              -webkit-transform: scale(1) translateX(0%);
+              -ms-transform: scale(1) translateX(0%);
+              transform: scale(1) translate(0);
+              opacity: 1
+          }
+      }
+
+      @-webkit-keyframes loading2 {
+          0% {
+              -webkit-transform: translateX(0%);
+              -ms-transform: translateX(0%);
+              transform: translate(0)
+          }
+
+          to {
+              -webkit-transform: translateX(28.57%);
+              -ms-transform: translateX(28.57%);
+              transform: translate(28.57%)
+          }
+      }
+
+      @keyframes loading2 {
+          0% {
+              -webkit-transform: translateX(0%);
+              -ms-transform: translateX(0%);
+              transform: translate(0)
+          }
+
+          to {
+              -webkit-transform: translateX(28.57%);
+              -ms-transform: translateX(28.57%);
+              transform: translate(28.57%)
+          }
+      }
+
+      @-webkit-keyframes loading3 {
+          0% {
+              -webkit-transform: scale(1) translateX(0%);
+              -ms-transform: scale(1) translateX(0%);
+              transform: scale(1) translate(0);
+              opacity: 1
+          }
+
+          to {
+              -webkit-transform: scale(.4) translateX(-28.57%);
+              -ms-transform: scale(.4) translateX(-28.57%);
+              transform: scale(.4) translate(-28.57%);
+              opacity: .3
+          }
+      }
+
+      @keyframes loading3 {
+          0% {
+              -webkit-transform: scale(1) translateX(0%);
+              -ms-transform: scale(1) translateX(0%);
+              transform: scale(1) translate(0);
+              opacity: 1
+          }
+
+          to {
+              -webkit-transform: scale(.4) translateX(-28.57%);
+              -ms-transform: scale(.4) translateX(-28.57%);
+              transform: scale(.4) translate(-28.57%);
+              opacity: .3
+          }
+      }
+      .startup-diagram {
+        overflow:hidden;
+        background:#16122F;
+        align-items:center;
+        z-index:44444;
+        position:fixed;
+        display: flex;
+        flex-direction: column;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        margin:0;
+        justify-content:center;
+        z-index:42782442;
+      }
+      .startup-diagram svg {
+          height:30px;
+          stroke: transparent;
+      }
+      .startup-diagram img {
+          height: 1.25rem;
+          width: auto;
+      }
+      .startup-diagram p{
+          color:#FFF;
+          padding:0 50px;
+          text-align:center;
+      }
+
+      .startup-diagram circle {
+          -webkit-transform-origin: center;
+          -ms-transform-origin: center;
+          transform-origin: center;
+          will-change: transform;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+      }
+      
+      .startup-diagram circle:nth-child(1) {
+        -webkit-animation: loading1 .6s infinite;
+        animation: loading1 .6s infinite
+      }
+      .startup-diagram circle:nth-child(2) {
+        -webkit-animation: loading2 .6s infinite;
+        animation: loading2 .6s infinite
+      }
+      .startup-diagram circle:nth-child(3) {
+        -webkit-animation: loading2 .6s infinite;
+        animation: loading2 .6s infinite
+      }
+      .startup-diagram circle:nth-child(4) {
+        -webkit-animation: loading3 .6s infinite;
+        animation: loading3 .6s infinite
+      }
+      @media (display-mode: fullscreen) {
+        .startup-diagram{
+        display: flex;
+        }
+      }
+    </style>
+    <script>
+      var flutterAppReady = false;
+      var flutterInAppWebViewPlatformReadyFn = [];
+      function flutterInAppWebViewPlatformReady(fn){
+        if(flutterAppReady){
+          fn && fn();
+        }else{
+          fn && flutterInAppWebViewPlatformReadyFn.push(fn);
+        }
+      }
+      window.addEventListener("flutterInAppWebViewPlatformReady", function() {
+        flutterAppReady = true;
+        for(let f of flutterInAppWebViewPlatformReadyFn){
+            f();
+        }
+      });
+      window.__lc = window.__lc || {};
+      window.__lc.license = 17143491;
+      var isMobileDevice = false;
+      var isMedia = false;
+      var MediaName = 'other';
+      ;(function(){
+        isMedia = ["fullscreen", "standalone", "minimal-ui"].some((displayMode) => window.matchMedia('(display-mode: ' + displayMode + ')').matches);
+        var agent = navigator.userAgent.toLowerCase();
+        if (/windows/.test(agent)) {
+          MediaName = 'windows pc';
+        } else if (/iphone|ipod/.test(agent) && /mobile/.test(agent)) {
+          MediaName = 'iphone';
+        } else if (/ipad/.test(agent) && /mobile/.test(agent)) {
+          MediaName = 'ipad';
+        } else if (/android/.test(agent) && /mobile/.test(agent)) {
+          MediaName = 'android';
+        } else if (/linux/.test(agent)) {
+          MediaName = 'linux pc';
+        } else if (/mac/.test(agent)) {
+          MediaName = 'mac';
+        } else {
+          MediaName = 'other';
+        }
+        var setOnresize = function(){
+            var width = Math.min(document.documentElement.clientWidth,600);
+            
+            // width = (isMobileDevice = (width <= 960)) ? width : width / 1920 * 23.4375;
+            width = (isMobileDevice = (width <= 600)) ? width : 375;
+            document.documentElement.style.fontSize = width / 23.4375 + "px";
+            isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+        }
+        window.addEventListener('resize',setOnresize);
+        setOnresize()
+      })()
+
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+    <!--app-css-->
+  </head>
+  <body>
+    <main class="body-main">
+      <div id="fixed-area"><!--app-#fixed-area--></div>
+      <div id="app"><!--app-ssr--></div>
+      <div id="independent"><!--app-#independent--></div>
+      <div id="interaction"><!--app-#interaction--></div>
+      <!--app-body-->
+    </main>
+    
+    <!--script-->
+  </body>
+</html>

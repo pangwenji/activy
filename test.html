@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+    .money {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: green;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: fall 2s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+  <title>Money Rain Animation</title>
+</head>
+<body>
+  <script>
+    function createMoney() {
+      const money = document.createElement('div');
+      money.className = 'money';
+      money.style.left = `${Math.random() * window.innerWidth}px`; // Set random horizontal position
+      document.body.appendChild(money);
+      setTimeout(() => {
+        money.remove(); // Remove the money element after it falls out of view
+      }, 2000);
+    }
+    setInterval(createMoney, 100); // Create a new money element every 100ms
+  </script>
+</body>
+</html>

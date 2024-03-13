@@ -1,0 +1,27 @@
+[1mdiff --git a/src/pages/member-asset.vue b/src/pages/member-asset.vue[m
+[1mindex c11a92b..31bd6d2 100644[m
+[1m--- a/src/pages/member-asset.vue[m
+[1m+++ b/src/pages/member-asset.vue[m
+[36m@@ -6,12 +6,12 @@[m
+ 			<div class="head">[m
+ 				<border-gradient class="avatar" :border-color="['#FFA67E', '#FF52FE']" bg-color="#2E2C5E" :angle="180">[m
+ 					<public-image :src="user.portrait"></public-image>[m
+[31m-					<div class="vip" v-if="isPc"><img src="@/assets/new/user/icon-vip.png" />VIP{{ user.level }}</div>[m
+[32m+[m					[32m<div class="vip" v-if="isPc"><img src="@/assets/new/user/icon-vip.svg" />VIP{{ user.level }}</div>[m
+ 				</border-gradient>[m
+ 				<div class="user-information">[m
+ 					<div class="name">[m
+ 						<div>{{ user.user_nick ? user.user_nick : user.username }}</div>[m
+[31m-						<div class="vip"> <img src="@/assets/new/user/icon-vip.png"/> <span>VIP{{ user.level }}</span></div>[m
+[32m+[m						[32m<div class="vip"> <img src="@/assets/new/user/icon-vip.svg"/> <span>VIP{{ user.level }}</span></div>[m
+ 					</div>[m
+ 					<div class="id">{{ user.id }}</div>[m
+ 				</div>[m
+[36m@@ -625,6 +625,7 @@[m [monShow(() => {[m
+ 			gap: 6px;[m
+ 			bottom:-16px;[m
+ 			font-size: 18px;[m
+[32m+[m			[32mcolor: #fff;[m
+ 			img{[m
+ 				width:18px;[m
+ 				height: 18px;[m

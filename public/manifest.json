@@ -1,0 +1,34 @@
+{
+  "short_name": "PGNEW",
+  "name": "PGNEW",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    }
+  ],
+  "id": "/?PGNEW=pwa",
+  "start_url": "/?PGNEW=pwa",
+  "background_color": "#1c1e22",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#1c1e22",
+  "description": "PGNEW",
+  "display_override": ["window-controls-overlay"],
+  "screenshots": [
+    {
+      "src": "/screenshot.png",
+      "type": "image/png",
+      "sizes": "371x662",
+      "form_factor": "narrow"
+    },
+    
+    {
+      "src": "/screenshot.png",
+      "type": "image/png",
+      "sizes": "371x662",
+      "form_factor": "wide"
+    }
+  ]
+}

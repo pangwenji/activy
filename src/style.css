@@ -1,0 +1,508 @@
+/* css全局变量 */
+
+@font-face {
+  font-family: Akrobat-ExtraBold;
+  src: url('/public/Akrobat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: SWISSC-BT;
+  src: url('/public/SWISSC-BT.ttf');
+  
+}
+
+@font-face {
+  font-family: SWISSC;
+  src: url('/public/SWISSC.TTF');
+}
+
+:root {
+  /* --body-background-color: #24262b; */
+  --body-background-color: #000000;
+  --headers-height: 2.5781rem;
+  --download-height: 0px;
+  --left-width: 296px;
+  --right-width: 0px;
+  /* pc端内容最大宽 */
+  /* --content-max-width:1350px; */
+  --content-max-width: 600px;
+  --status-bar-height: 0px;
+  --tab-bar-height2: 3.375rem;
+  --tab-bar-height: 3.375rem;
+  --MENU: #8E90CD;
+  --TAB-: #5B6DA1;
+  --Linear: linear-gradient(271deg, #29ACC9 0.61%, #F355FF 99.69%);
+  --H5-: #201E47;
+  --EMPTY: #88A2EB;
+  --INPUT: #231D4E;
+  --INPUT-TEXT: #B5EBFF;
+  --SVG: #00FFFF;
+
+  --I0: -1;
+  --I1: 100;
+  --I2: 200;
+  --I3: 300;
+  --I4: 400;
+  --I5: 500;
+  --I6: 600;
+  --IMAX: 999999;
+
+  height: 100%;
+  font-family: Akrobat-ExtraBold;
+}
+
+body {
+  /* background: var(--body-background-color); */
+  height: 100%;
+  scroll-behavior: smooth;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+body > .body-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  transform: translate(0);
+  /* z-index: var(--I1); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input,
+textarea {
+  display: block;
+  height: 100%;
+  background: none;
+  color: inherit;
+  opacity: 1;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-indent: inherit;
+  text-transform: inherit;
+  text-shadow: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+  user-select: text;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent;
+  background-image: none;
+}
+
+input:disabled,
+textarea:disabled {
+  -webkit-text-fill-color: currentcolor;
+}
+
+input::-webkit-inner-spin-button,
+textarea::-webkit-inner-spin-button {
+  display: none;
+}
+
+view {
+  display: block;
+}
+
+text {
+  display: inline;
+}
+
+.bscroll-indicator {
+  border: none !important;
+  background-color: #17181b !important;
+}
+
+#app {
+  width: calc(100% - var(--left-width) - var(--right-width));
+  /* padding-top:var(--headers-height); */
+  /* height: 100%; */
+  box-sizing: border-box;
+  position: relative;
+  left: var(--left-width);
+  right: var(--right-width);
+  z-index: calc(var(--I1) + 0);
+  position: relative;
+  overflow: hidden;
+  transition: left .3s ease-in-out;
+  /* min-height:100vh; */
+}
+
+/* 弹窗遮罩和页面加载动画遮罩 */
+.mask,
+.loading-pages {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: calc(var(--I3) + 0);
+}
+
+.loading-pages {
+  z-index: calc(var(--IMAX) + 0);
+}
+
+/* 页面根节点 */
+.page {
+  position: relative;
+  z-index: calc(var(--I1) + 0);
+  /* min-width: 370px; */
+}
+
+.ui-hint-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: calc(var(--I4) + 0);
+  display: block;
+  box-sizing: border-box;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.ui-modal-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: calc(var(--I2) + 0);
+  display: block;
+  box-sizing: border-box;
+}
+
+#interaction {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: calc(var(--I4) + 0);
+}
+
+#independent page-view {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 375px;
+  height: 70vh;
+  z-index: calc(var(--I3) + 1);
+}
+
+#fixed-area {
+  position: relative;
+  z-index: calc(var(--I2) + 0);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+page {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.table {
+  display: table;
+
+  .table-row {
+    display: table-row;
+  }
+
+  .table-cell {
+    display: table-cell;
+  }
+}
+
+.table-row:nth-child(even) {
+  background:#201E47 !important;
+}
+
+/*分割线*/
+.divider {
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000000;
+  background-clip: content-box;
+  margin: 0.5000rem 0;
+}
+
+@media (min-width: 9999px) {
+  .h5 {
+    display: none !important;
+  }
+
+  #independent page-view {
+    margin: auto;
+  }
+
+  .ui-hint-root {
+    position: static;
+    pointer-events: all;
+    width: 28.75rem;
+    margin-left: 1.25rem;
+  }
+
+  :root {
+    --headers-height: 88px;
+    --download-height: 0px !important;
+  }
+}
+
+@media (max-width: 9999px) {
+  .pc {
+    display: none !important;
+  }
+
+  :root {
+    /* --content-max-width: 100%; */
+    --left-width: 0;
+    --right-width: 0;
+  }
+
+  #app {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100% - var(--download-height));
+  }
+}
+body[data-page-path="/customer-service"] #chat-widget-container{
+  display:none !important;
+}
+body[data-page-path="/game-open"] #chat-widget-container{
+  display:none !important;
+}
+#chat-widget-container[style*='width: 84px;']{
+  position: absolute !important;
+  bottom: 12vh !important;
+  right:-3px !important;
+  z-index: var(--I1) !important;
+}
+
+.scroll-runing #chat-widget-container{
+  right:-40px !important;
+}
+
+
+
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0) translateX(0);
+  }
+
+  70% {
+    opacity:1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) translateX(-15vw);
+    opacity:0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100px) rotate(0) translateX(0);
+  }
+  70% {
+    opacity:1;
+  }
+  100% {    
+    opacity:0;
+    transform: translateY(100vh) rotate(-360deg) translateX(-15vw);
+  }
+}
+
+
+
+
+@keyframes fall1 {
+  0% {
+    transform: translateY(-100px) rotate(0) translateX(0);
+  }
+
+  70% {
+    opacity:1;
+  }
+  100% {    
+    opacity:0;
+    transform: translateY(100vh) rotate(360deg) translateX(15vw);
+  }
+}
+
+@keyframes drop1 {
+  0% {
+    transform: translateY(-100px) rotate(0) translateX(0);
+  }
+
+  70% {
+    opacity:1;
+  }
+  100% {    
+    opacity:0;
+    transform: translateY(100vh) rotate(-360deg) translateX(15vw);
+  }
+}
+
+
+
+
+
+
+@keyframes fall2 {
+  0% {
+    transform: translateY(-100px) rotate(0);
+  }
+
+  70% {
+    opacity:1;
+  }
+  100% {    
+    opacity:0;
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    transform: translateY(-100px) rotate(0);
+  }
+
+  70% {
+    opacity:1;
+  }
+  100% {    
+    opacity:0;
+    transform: translateY(100vh) rotate(-360deg);
+  }
+}
+
+
+
+@media (min-width: 9999px) {
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0) translateX(0);
+    }
+  
+    70% {
+      opacity:1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg) translateX(-100px);
+      opacity:0;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(-100px) rotate(0) translateX(0);
+    }
+    70% {
+      opacity:1;
+    }
+    100% {    
+      opacity:0;
+      transform: translateY(100vh) rotate(-360deg) translateX(-100px);
+    }
+  }
+  
+  
+  
+  
+  @keyframes fall1 {
+    0% {
+      transform: translateY(-100px) rotate(0) translateX(0);
+    }
+  
+    70% {
+      opacity:1;
+    }
+    100% {    
+      opacity:0;
+      transform: translateY(100vh) rotate(360deg) translateX(100px);
+    }
+  }
+  
+  @keyframes drop1 {
+    0% {
+      transform: translateY(-100px) rotate(0) translateX(0);
+    }
+  
+    70% {
+      opacity:1;
+    }
+    100% {    
+      opacity:0;
+      transform: translateY(100vh) rotate(-360deg) translateX(100px);
+    }
+  }
+  @keyframes fall2 {
+    0% {
+      transform: translateY(-100px) rotate(0);
+    }
+  
+    70% {
+      opacity:1;
+    }
+    100% {    
+      opacity:0;
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  
+  @keyframes drop2 {
+    0% {
+      transform: translateY(-100px) rotate(0);
+    }
+  
+    70% {
+      opacity:1;
+    }
+    100% {    
+      opacity:0;
+      transform: translateY(100vh) rotate(-360deg);
+    }
+  }
+}
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */
+/*============================================ 红包雨动画 ==================================================================================================================================== */

@@ -1,0 +1,488 @@
+@font-face {
+    font-family: iconfont;
+    src: url('./fonts/iconfont.f21874d5.woff2');
+}
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-unit-mxn:before {
+    content: "\e713"
+}
+
+.icon-close2:before {
+    content: "\e60e"
+}
+
+.icon-full-screen:before {
+    content: "\e60a"
+}
+
+.icon-exit-full-screen:before {
+    content: "\e6cc"
+}
+
+.icon-hot1:before {
+    content: "\e823"
+}
+
+.icon-birthday:before {
+    content: "\e62f"
+}
+
+.icon-chengxinhezuowoshou:before {
+    content: "\e609"
+}
+
+.icon-022dice:before {
+    content: "\e616"
+}
+
+.icon-app:before {
+    content: "\e6dd"
+}
+
+.icon-qianbao:before {
+    content: "\e6fe"
+}
+
+.icon-biaoqian-:before {
+    content: "\e60b"
+}
+
+.icon-laji_huabanfuben:before {
+    content: "\e634"
+}
+
+.icon-search:before {
+    content: "\e69b"
+}
+
+.icon-to-copy:before {
+    content: "\eb34"
+}
+
+.icon-mail:before {
+    content: "\e611"
+}
+
+.icon-yuanxinghongdian:before {
+    content: "\e603"
+}
+
+.icon-drafts:before {
+    content: "\e626"
+}
+
+.icon-sales_promotion:before {
+    content: "\e6a9"
+}
+
+.icon-yingguoguoqi:before {
+    content: "\e604"
+}
+
+.icon-yonghudianji:before {
+    content: "\e638"
+}
+
+.icon-lanqiu:before {
+    content: "\ea73"
+}
+
+.icon-jiangbei:before {
+    content: "\e872"
+}
+
+.icon-broadcast-full:before {
+    content: "\e972"
+}
+
+.icon-zuqiu:before {
+    content: "\e63d"
+}
+
+.icon-shexiangji2:before {
+    content: "\e866"
+}
+
+.icon-sports:before {
+    content: "\e606"
+}
+
+.icon-suiji:before {
+    content: "\e799"
+}
+
+.icon-ticketing:before {
+    content: "\e610"
+}
+
+.icon-shibai:before {
+    content: "\e797"
+}
+
+.icon-wancheng:before {
+    content: "\e795"
+}
+
+.icon-a--:before {
+    content: "\e793"
+}
+
+.icon-a-:before {
+    content: "\e794"
+}
+
+.icon-qingchu:before {
+    content: "\e791"
+}
+
+.icon-yiwen:before {
+    content: "\e792"
+}
+
+.icon-us:before {
+    content: "\e892"
+}
+
+.icon-share3:before {
+    content: "\e72f"
+}
+
+.icon-vip2:before {
+    content: "\e6dc"
+}
+
+.icon-notice:before {
+    content: "\e685"
+}
+
+.icon-tips2:before {
+    content: "\e66c"
+}
+
+.icon-rili:before {
+    content: "\e8b4"
+}
+
+.icon-vip:before {
+    content: "\76"
+}
+
+.icon-share2:before {
+    content: "\e63c"
+}
+
+.icon-here:before {
+    content: "\e62e"
+}
+
+.icon-kefu:before {
+    content: "\e742"
+}
+
+.icon-slots:before {
+    content: "\e601"
+}
+
+.icon-spins:before {
+    content: "\e66b"
+}
+
+.icon-live:before {
+    content: "\ea88"
+}
+
+.icon-hot-2:before {
+    content: "\eb33"
+}
+
+.icon-unit-brl:before {
+    content: "\e735"
+}
+
+.icon-help-2:before {
+    content: "\e67f"
+}
+
+.icon-freebet-9f:before {
+    content: "\e730"
+}
+
+.icon-home-9f:before {
+    content: "\e728"
+}
+
+.icon-virtual-9f:before {
+    content: "\e729"
+}
+
+.icon-app-9f:before {
+    content: "\e72a"
+}
+
+.icon-league-9f:before {
+    content: "\e72c"
+}
+
+.icon-a-lujing11:before {
+    content: "\e726"
+}
+
+.icon-share:before {
+    content: "\e61f"
+}
+
+.icon-user:before {
+    content: "\e6f2"
+}
+
+.icon-bank:before {
+    content: "\e6f3"
+}
+
+.icon-date:before {
+    content: "\e6f0"
+}
+
+.icon-withdraw:before {
+    content: "\e6f1"
+}
+
+.icon-selectMore:before {
+    content: "\e6eb"
+}
+
+.icon-packUp:before {
+    content: "\e6ec"
+}
+
+.icon-xingzhuangjiehe:before {
+    content: "\e6da"
+}
+
+.icon-sms1:before {
+    content: "\e6db"
+}
+
+.icon-del:before {
+    content: "\e6d9"
+}
+
+.icon-play:before {
+    content: "\e6d7"
+}
+
+.icon-pause:before {
+    content: "\e6d8"
+}
+
+.icon-a-fansvg:before {
+    content: "\e6d0"
+}
+
+.icon-down:before {
+    content: "\e6c8"
+}
+
+.icon-close-2:before {
+    content: "\e6c5"
+}
+
+.icon-football:before {
+    content: "\e6c6"
+}
+
+.icon-sms:before {
+    content: "\e6a8"
+}
+
+.icon-tips:before {
+    content: "\e6a7"
+}
+
+.icon-service:before {
+    content: "\e6a6"
+}
+
+.icon-lock:before {
+    content: "\e6a5"
+}
+
+.icon-home-line:before {
+    content: "\e6a4"
+}
+
+.icon-help:before {
+    content: "\e6a3"
+}
+
+.icon-favorite:before {
+    content: "\e6a2"
+}
+
+.icon-a-2:before {
+    content: "\e6a0"
+}
+
+.icon-a-3:before {
+    content: "\e6a1"
+}
+
+.icon-a-1:before {
+    content: "\e69f"
+}
+
+.icon-sound-open:before {
+    content: "\e699"
+}
+
+.icon-sound-close:before {
+    content: "\e69a"
+}
+
+.icon-broadcast:before {
+    content: "\e696"
+}
+
+.icon-Selected:before {
+    content: "\e693"
+}
+
+.icon-gift1:before {
+    content: "\e692"
+}
+
+.icon-rank:before {
+    content: "\e66a"
+}
+
+.icon-a-Fill1:before {
+    content: "\e669"
+}
+
+.icon-disable:before {
+    content: "\e668"
+}
+
+.icon-we:before {
+    content: "\e667"
+}
+
+.icon-record:before {
+    content: "\e665"
+}
+
+.icon-android:before {
+    content: "\e664"
+}
+
+.icon-up:before {
+    content: "\e663"
+}
+
+.icon-group:before {
+    content: "\e661"
+}
+
+.icon-noeyes:before {
+    content: "\e65f"
+}
+
+.icon-eyes:before {
+    content: "\e660"
+}
+
+.icon-noMessage:before {
+    content: "\e65e"
+}
+
+.icon-wallet:before {
+    content: "\e65c"
+}
+
+.icon-gift:before {
+    content: "\e65d"
+}
+
+.icon-copy:before {
+    content: "\e65b"
+}
+
+.icon-msg:before {
+    content: "\e65a"
+}
+
+.icon-email:before {
+    content: "\e656"
+}
+
+.icon-wechat:before {
+    content: "\e657"
+}
+
+.icon-call:before {
+    content: "\e658"
+}
+
+.icon-whatsapp:before {
+    content: "\e659"
+}
+
+.icon-menu:before {
+    content: "\e655"
+}
+
+.icon-main:before {
+    content: "\e654"
+}
+
+.icon-me:before {
+    content: "\e651"
+}
+
+.icon-money:before {
+    content: "\e652"
+}
+
+.icon-home:before {
+    content: "\e64f"
+}
+
+.icon-recharge:before {
+    content: "\e64c"
+}
+
+.icon-close:before {
+    content: "\e600"
+}
+
+.icon-to:before {
+    content: "\e64b"
+}
+
+.icon-hot:before {
+    content: "\e64a"
+}
+
+.icon-a-18:before {
+    content: "\e649"
+}
+
+.icon-checked:before {
+    content: "\e648"
+}
+
+.icon-JP:before {
+    content: "\e647"
+}
+
+.icon-people:before {
+    content: "\e646"
+}

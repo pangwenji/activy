@@ -1,0 +1,221 @@
+
+// 过渡模式
+//1. default：淡入和淡出过渡同时发生
+
+//2. in-out：新元素首先淡入。 然后当前元素淡出。
+
+//3. out-in：当前元素先淡出。 然后新元素开始淡入。
+
+
+// 过渡的初始状态，过度开始后将其删除 v-enter-from  v-leave-from  
+
+// 过渡的激活状态 v-enter-active  v-leave-active
+
+// 过渡的结束状态 v-enter-to v-leave-to
+
+// 普通平移动画
+/*打开*/
+.default-open-enter-active, .default-open-leave-active {
+  position: fixed;
+  transition: all 0.5s ease;
+  top:calc(0 + var(--download-height));
+}
+.default-open-enter-from {    
+    transform:translateX(100%);
+}
+
+.default-open-enter-to,.default-open-leave-from {    
+    transform:translateX(0%);
+}
+
+.default-open-leave-to {
+    transform:translateX(-100%);
+}
+/*关闭*/
+.default-close-enter-active, .default-close-leave-active {
+  position: fixed;
+  transition: all 0.5s ease;
+  top:calc(0 + var(--download-height));
+}
+
+.default-close-enter-from {        
+    transform:translateX(-100%);
+}
+
+.default-close-enter-to, .default-close-leave-from {
+    transform:translateX(0%);
+}
+.default-close-leave-to {
+  transform:translateX(100%);
+}
+
+@media (min-width: 9999px) {
+  /*打开*/
+  .default-open-enter-active, .default-open-leave-active {
+    position: absolute;
+    transition: all 0.5s ease;
+    top:calc(0 + var(--download-height));
+  }
+  .default-open-enter-from {        
+    transform: scale(0);
+  }
+
+  .default-open-enter-to,.default-open-leave-from {    
+    transform: scale(1);
+  }
+
+  .default-open-leave-to {
+    transform: scale(0);
+  }
+  /*关闭*/
+  .default-close-enter-active, .default-close-leave-active {
+    position: absolute;
+    transition: all 0.5s ease;
+    top:calc(0 + var(--download-height));
+  }
+
+  .default-close-enter-from {         
+    transform: scale(0);
+  }
+
+  .default-close-enter-to, .default-close-leave-from {
+    transform: scale(1);
+  }
+  .default-close-leave-to {
+    transform: scale(0);
+  }
+}
+
+
+
+
+// ====================================================================
+// 平移加缩放动画
+/*打开*/
+.scale-slide-open-enter-active,
+.scale-slide-open-leave-active {
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index:calc(var(--I1) + 0);
+  top:calc(0 + var(--download-height));
+}
+
+.scale-slide-open-enter-from {    
+    transform:translateX(-100%);
+}
+
+.scale-slide-open-enter-to {    
+    transform:translateX(0%);
+}
+
+.scale-slide-open-leave-from {
+  transform: scale(1);
+}
+
+.scale-slide-open-leave-to {
+  transform: scale(0.8);
+}
+/*关闭*/
+.scale-slide-close-enter-active,
+.scale-slide-close-leave-active {
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index:calc(var(--I1) + 1);
+  top:calc(0 + var(--download-height));
+  &+.scale-slide-close-enter-active,
+  &+.scale-slide-close-leave-active {
+    z-index:calc(var(--I1) + 0);
+  }
+}
+
+.scale-slide-close-enter-from {    
+    transform: scale(0.8);
+}
+
+.scale-slide-close-enter-to {    
+    transform: scale(1);
+}
+
+.scale-slide-close-leave-from {
+    transform:translateX(0%);
+}
+
+.scale-slide-close-leave-to {
+  transform:translateX(-100%);
+}
+
+/*关闭 层级降低*/
+.scale-slide-close-down-enter-active,
+.scale-slide-close-down-leave-active {
+  position: fixed;
+  transition: all 0.5s ease;
+  z-index:calc(var(--I1) + 0);
+  top:calc(0 + var(--download-height));
+}
+
+.scale-slide-close-down-enter-from {    
+    transform: scale(0.8);
+}
+
+.scale-slide-close-down-enter-to {    
+    transform: scale(1);
+}
+
+.scale-slide-close-down-leave-from {
+    transform:translateX(0%);
+}
+
+.scale-slide-close-down-leave-to {
+  transform:translateX(-100%);
+}
+// ====================================================================
+
+
+
+// 渐变
+.opacity-open-enter-active,
+.opacity-open-leave-active {
+  transition: all 0.5s ease;
+}
+.opacity-open-enter-from,
+.opacity-open-leave-to {
+  opacity: 0;
+}
+.opacity-close-enter-active,
+.opacity-close-leave-active {
+  transition: all 0.5s ease;
+}
+.opacity-close-enter-from,
+.opacity-close-leave-to {
+  opacity: 0;
+}
+
+// 渐变
+.opacity-enter-active,
+.opacity-leave-active {
+  transition: all 0.5s ease;
+}
+.opacity-enter-from,
+.opacity-leave-to {
+  opacity: 0;
+}
+
+
+// 渐变
+.move-open-enter-active,
+.move-open-leave-active {
+  transition: all 0.5s ease;
+}
+.move-open-enter-from,
+.move-open-leave-to {
+  transform:translateX(100%);
+}
+
+.move-close-enter-active,
+.move-close-leave-active {
+  transition: all 0.5s ease;
+}
+.move-close-enter-from,
+.move-close-leave-to {
+  transform:translateX(100%);
+}

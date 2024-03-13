@@ -1,0 +1,26 @@
+{
+  "short_name": "PGNEW",
+  "name": "PGNEW",
+  "icons": [
+    {
+      "src": "/static/192x192.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    }
+  ],
+  "id": "/?PGNEW=pwa",
+  "start_url": "/?PGNEW=pwa",
+  "background_color": "#1c1e22",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#1c1e22",
+  "description": "PGNEW",
+  "screenshots": [
+    {
+      "src": "/static/screenshot1.png",
+      "type": "image/png",
+      "sizes": "390x844",
+      "form_factor": "narrow"
+    }
+  ]
+}

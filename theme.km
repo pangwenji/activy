@@ -1,0 +1,442 @@
+{
+    "root": {
+        "data": {
+            "id": "cx522ilmq800",
+            "created": 1700627313850,
+            "text": "主题",
+            "progress": null,
+            "priority": null,
+            "note": null,
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cx523bzca000",
+                    "created": 1700627377806,
+                    "text": "颜色",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cx547o1jhn40",
+                            "created": 1700633359737,
+                            "text": "背景",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx5481iovqw0",
+                                    "created": 1700633389072,
+                                    "text": "基本色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx523hmj4c00",
+                                    "created": 1700627390092,
+                                    "text": "反色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx523l134qg0",
+                                    "created": 1700627397503,
+                                    "text": "辅助灰色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx523nizp3c0",
+                                    "created": 1700627402939,
+                                    "text": "辅助亮色"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cx523evlq3c0",
+                            "created": 1700627384110,
+                            "text": "文字",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx523xnn2w00",
+                                    "created": 1700627424988,
+                                    "text": "基本色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx523t3fel40",
+                                    "created": 1700627415058,
+                                    "text": "反色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx524275qi00",
+                                    "created": 1700627434875,
+                                    "text": "辅助灰色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx5248nqa1c0",
+                                    "created": 1700627448938,
+                                    "text": "辅助亮色"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cx54batmiuo0",
+                            "created": 1700633644417,
+                            "text": "边框"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx523xnn2w00",
+                                    "created": 1700627424988,
+                                    "text": "基本色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx523t3fel40",
+                                    "created": 1700627415058,
+                                    "text": "反色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx524275qi00",
+                                    "created": 1700627434875,
+                                    "text": "辅助灰色"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx5248nqa1c0",
+                                    "created": 1700627448938,
+                                    "text": "辅助亮色"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cx54luatfnk0",
+                            "created": 1700634470458,
+                            "text": "其它"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx54ojiawhc0",
+                                    "created": 1700634682057,
+                                    "text": "渐变"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54oroy0z40",
+                                    "created": 1700634699873,
+                                    "text": "图片"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cx54c43anoo0",
+                    "created": 1700633708128,
+                    "text": "数值"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cx54cbvdn540",
+                            "created": 1700633725064,
+                            "text": "文字",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx54d8caqw00",
+                                    "created": 1700633795744,
+                                    "text": "间距"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54dik4cfs0",
+                                    "created": 1700633817985,
+                                    "text": "行高"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54e0i68qo0",
+                                    "created": 1700633857049,
+                                    "text": "尺寸"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cx54cgvupy80",
+                            "created": 1700633735976,
+                            "text": "图片"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx54cl6ih6w0",
+                            "created": 1700633745328,
+                            "text": "圆角"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx54cq22vts0",
+                            "created": 1700633755944,
+                            "text": "水平间距"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx54cs27jzs0",
+                            "created": 1700633760305,
+                            "text": "垂直间距"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx54d49g8740",
+                            "created": 1700633786864,
+                            "text": "透明度"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx54mpexejs0",
+                            "created": 1700634538186,
+                            "text": "icon"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cx527355t5s0",
+                    "created": 1700627672024,
+                    "text": "占位图"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cx5278jyzio0",
+                            "created": 1700627683803,
+                            "text": "加载中"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx5276g5tr40",
+                            "created": 1700627679219,
+                            "text": "加载失败"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx527grohjs0",
+                            "created": 1700627701683,
+                            "text": "无内容"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cx524bd31400",
+                    "created": 1700627454824,
+                    "text": "布局"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cx524gtjd3k0",
+                            "created": 1700627466703,
+                            "text": "上下"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524edftfs0",
+                            "created": 1700627461376,
+                            "text": "左右"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx52naw9re00",
+                            "created": 1700628942727,
+                            "text": "左右对齐"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx52nfdta340",
+                            "created": 1700628952495,
+                            "text": "上下对齐"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524j5kewo0",
+                            "created": 1700627471784,
+                            "text": "网格"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524l7da6o0",
+                            "created": 1700627476247,
+                            "text": "块级"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524ng9keo0",
+                            "created": 1700627481138,
+                            "text": "行内"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524sap4co0",
+                            "created": 1700627491685,
+                            "text": "居中"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cx524py7ztk0",
+                            "created": 1700627486577,
+                            "text": "定位"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cx5256r57yo0",
+                    "created": 1700627523155,
+                    "text": "交互",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cx54k5yw3ps0",
+                            "created": 1700634339129,
+                            "text": "事件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cx54n94qaj40",
+                                    "created": 1700634581105,
+                                    "text": "鼠标"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54nhxh3jc0",
+                                    "created": 1700634600257,
+                                    "text": "键盘"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54o2flpo00",
+                                    "created": 1700634644889,
+                                    "text": "手势"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cx54qrr6pk00",
+                                    "created": 1700634856737,
+                                    "text": "其它"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cx527kh66zk0",
+                            "created": 1700627709755,
+                            "text": "动画"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "classic-compact",
+    "version": "1.4.43"
+}

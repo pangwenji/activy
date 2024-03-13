@@ -1,0 +1,92 @@
+
+@import "/node_modules/swiper/swiper.scss";
+
+
+// 内容最大宽
+$content-max-width:1350px;
+// public-page-head
+$content-height:3.4375rem;
+
+%flex-center {
+	display:flex;
+	align-items: center;
+	justify-content:center;
+}
+
+%transition {
+	transition: all 0.5s ease;
+}
+%button {
+	@extend %flex-center;
+	color: #fff;
+	font-size:0.875rem;
+	font-weight:400;
+	border-radius:0.5rem;
+	cursor: pointer;
+	//border: 1px solid #BAE2FF;
+	background: #009d81;
+	// background: radial-gradient(50% 50% at 50% 0%, rgba(144, 255, 255, 0.50) 0%, rgba(144, 255, 255, 0.00) 100%), linear-gradient(180deg, #7368FF 0%, #5F6FFF 57.39%, #7084FF 100%);
+}
+%button-disabled {
+	@extend %flex-center;
+	font-size:0.875rem;
+	font-weight:400;
+	border-radius:0.5rem;
+	cursor: pointer;
+	border:none;
+	pointer-events: none;
+	color: rgba(255,255,255,0.5);
+	background: #009d81;
+	// background: linear-gradient(0deg, rgba(32, 30, 71, 0.72) 0%, rgba(32, 30, 71, 0.72) 100%), radial-gradient(50% 50% at 50% 0%, rgba(144, 255, 255, 0.50) 0%, rgba(144, 255, 255, 0.00) 100%), linear-gradient(180deg, #7368FF 0%, #5F6FFF 57.39%, #7084FF 100%);
+}
+// 按钮颜色
+@mixin button-color($color){
+	$color2:saturate(fade-in(mix($color,rgba(0,0,0,0.7)),1), 30%);
+	background-color:$color2;
+	background-image: conic-gradient(from 1turn,$color,$color2);
+	// &:active{
+	// 	background-image: conic-gradient(from 1turn,fade-out($color,0.3),fade-out($color2,0.3));
+	// }
+}
+// 按钮
+@mixin button($color){
+	@extend %flex-center;
+	color: #fff;
+	font-size:0.8750rem;
+	font-weight:400;
+	border-radius:0.5rem;
+	cursor: pointer;
+	@include button-color($color)
+}
+
+%ellipsis{
+	flex-wrap: nowrap;
+	word-break: normal;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+	overflow:hidden;
+}
+
+@mixin pc {
+	@media (min-width: 9999px){
+		@content;
+	}
+}
+
+@mixin h5 {
+	@media (max-width: 9999px){		
+		@content;
+	}
+}
+
+// px 转 rem 方法
+@function pxToRem($pxValue) {
+	$baseFontSize: 16;
+	@return calc($pxValue / $baseFontSize) + rem;
+}
+
+
+.cursor{
+	cursor: pointer;
+}

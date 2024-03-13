@@ -1,0 +1,123 @@
+/* 水平方向 */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+
+}
+
+/* 垂直方向 */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 横向上下居中 */
+.row-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/* 横向左右居中 */
+.justify-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* 横向上下左右居中 */
+.all-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 横向均匀分布 */
+.row-space-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* 横向居中分布 */
+.row-space-around {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around
+}
+
+/* 纵向左右居中 */
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* 垂直两端对齐 */
+.column-space-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* 纵向均匀分布 */
+.column-space-around {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* 横向底部 */
+.row-end {
+	display: flex;
+	align-content: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* 文本右对齐 */
+.text-right {
+	text-align: right;
+}
+
+/* 文本左对齐 */
+.text-left {
+	text-align: left;
+}
+
+/* .文本居中 */
+.text-center {
+	text-align: center;
+}
+
+/* 文本两端对齐 */
+.text-between {
+	display: inline-block;
+	flex: 1;
+	min-width: 100px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+/* 文本溢出用省略号代替 */
+.ellipsis {
+	display: -webkit-box;
+	overflow: hidden;
+	white-space: normal !important;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.ellipsis-nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.flex {
+	flex: 1;
+}

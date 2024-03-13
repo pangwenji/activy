@@ -1,0 +1,45 @@
+$tipColor: #fff;
+$inputTipColor: #868686;
+$inputColor: #868686;
+$inputBackgroundColor: #494949;
+$pageBackgroundColor: rgb(31, 31, 31);
+$highTipColor: #009d81;
+$fontSize: .7500rem;
+$textMarginTop: 0.2000rem;
+$borderBottomColor: #3f3f3f;
+$tableTitleColor: #383838;
+$cellColor: #949494;
+
+@mixin arrowIcon {
+    width: .9375rem;
+    height: .9375rem;
+    fill: white;
+}
+
+@mixin flexButton($color: #009d80){
+    width: 100%;
+    background:  $color;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: .04rem;
+	font-family: PingFang SC;
+	color: #FFF;
+    height: 100%;
+    width: 100%;
+	border-radius: .3125rem;
+}
+
+page-view {
+	background: #1f1f1f;
+}
+
+
+// @font-face {
+//     font-family: "SWISSC-BT";
+//     src:  url("./assets/font/Swiss911-Cm-BT.ttf") format("truetype");
+//     font-weight: 400;
+//     font-display: optional;
+// }
